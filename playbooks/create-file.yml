@@ -1,0 +1,6 @@
+- host: localhost
+  tasks:
+    - name: new file creation
+      copy:
+        dest: file.txt
+        content: test123
