@@ -6,3 +6,6 @@
     - name: listing
       debug:
         msg: "{{ listing.stdout }}"
+    - name: new variable output
+      debug:
+        msg: "{{ my_variable }}"

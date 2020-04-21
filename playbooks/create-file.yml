@@ -4,3 +4,8 @@
       copy:
         dest: file.txt
         content: test123
+
+    - name: new stat creation
+      set_stats:
+        data:
+          my_variable: this is awesome
