@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+    - name: listing files
+      shell: ls -la
+      register: listing
+    - name: listing
+      debug:
+        msg: "{{ listing.stdout }}"
