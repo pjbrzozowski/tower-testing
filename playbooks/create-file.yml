@@ -9,3 +9,8 @@
       set_stats:
         data:
           my_variable: this is awesome
+
+    - name: get latest terraform version id
+      set_stats:
+        data:
+          version: "{{ my_variable | json_query('current_version') }}"
