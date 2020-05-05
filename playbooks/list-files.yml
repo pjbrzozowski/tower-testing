@@ -1,7 +1,7 @@
 - hosts: localhost
   tasks:
     - name: listing files
-      shell: ls -la
+      shell: id
       register: listing
     - name: listing
       debug:
