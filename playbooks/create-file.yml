@@ -2,15 +2,5 @@
   tasks:
     - name: new file creation
       copy:
-        dest: file.txt
+        dest: /opt/storage/{{ inventory_hostname }}.txt
         content: test123
-
-    - name: new stat creation
-      set_stats:
-        data:
-          my_variable: this is awesome
-
-    - name: get latest terraform version id
-      set_stats:
-        data:
-          version: "{{ 'test' | json_query('current_version') }}"
