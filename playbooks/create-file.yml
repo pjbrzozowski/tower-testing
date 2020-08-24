@@ -1,5 +1,13 @@
 - hosts: all
   tasks:
+    - name: check id
+      delegate_to: localhost
+      command: id
+      register: myid
+
+    - debug:
+        var: myid
+
     - name: new file creation
       delegate_to: localhost
       copy:
