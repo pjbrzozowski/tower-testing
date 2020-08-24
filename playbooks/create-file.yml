@@ -1,6 +1,7 @@
 - hosts: all
   tasks:
     - name: new file creation
+      delegate_to: localhost
       copy:
         dest: /opt/storage/{{ inventory_hostname }}.txt
         content: test123
